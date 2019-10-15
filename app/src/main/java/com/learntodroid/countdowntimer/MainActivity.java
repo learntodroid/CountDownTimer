@@ -24,13 +24,11 @@ public class MainActivity extends AppCompatActivity {
     int hoursLeft, minutesLeft, secondsLeft;
     TextView hoursLeftText, minutesLeftText, secondsLeftText;
 
-
     int totalSecondsLeft;
 
     boolean isPaused = false;
 
     private void finishTimer(String message) {
-        secondsLeft = 0;
         countDownText.setText(message);
         start.setEnabled(true);
         pause.setEnabled(false);
